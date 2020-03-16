@@ -1,0 +1,157 @@
+/* ------------------------------- Variable --------------- */
+:root {
+    --green-color: #7acc2d;
+    --white-color: white;
+    --black-color: #313337;
+    /* ------------------------Tipografia */
+    --normal: 12px;
+    /* ------------------------Espaciado */
+    --space: 10px;
+    /* ------------------------Box shadow */
+    --box: 0px 0px 2px 1px #e6e5e9;
+}
+/* ------------------------------- Estilos General--------- */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p, label {
+    font-size: var(--normal);
+}
+
+/* ------------------------------- Header ---------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: var(--white-color);
+    background-color: var(--green-color);
+}
+nav ul {
+    display: flex;
+}
+nav li {
+    padding-left: 20px;
+    list-style: none;
+}
+nav li a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+nav li a:hover {
+    color: var(--white-color);
+}
+/* ------------------------------- Main Section ---------------- */
+.main_section {
+    padding: 15%;
+    text-align: center;
+}
+/* ------------------------------- Products ---------------- */
+.products {
+    display: flex;
+    max-height: 50px;
+    padding: 20%;
+    background-image: url("../images/curve.png");
+    background-size: cover;
+    background-position: center top;
+}
+.product {
+    padding: 10px;
+    margin-top: -280px;
+}
+.product-title {
+    text-align: center;
+}
+.product .content {
+    padding: 15px;
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+}
+.img-content {
+    text-align: center;
+}
+.main-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    color: var(--white-color);
+    background-color: var(--green-color);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main-button:hover {
+    background-color: #5e9e22;
+}
+/* ------------------------------- Favoritos ---------------- */
+.favoritos{
+    padding: 10%;
+    display: flex;
+}
+.favorito{
+    text-align: center;
+    padding: 20px;
+}
+.favorito img{
+    max-height: 100px
+}
+.text-favorito{
+    text-align: justify;
+}
+/* ------------------------------- Mentions ---------------- */
+.mentions{
+    display: flex;
+    padding: 5%;
+}
+.mention img{
+    width: 100%;
+}
+h2.mention-title{
+    text-align: center;
+}
+.mention{
+    padding: var(--space);
+}
+.content-mention{
+    box-shadow: var(--box);
+}
+.mention .text{
+    padding: var(--space);
+}
+/* ------------------------------- Venta ---------------- */
+.modulo-pago {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+.modulo-pagp-img {
+    max-width: 150px;
+    margin: auto;
+}
+.data {
+    margin-top: var(--space);
+    width: 100%;
+    height: 35px;
+   margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+
+/* ------------------------------- Footer ---------------- */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    padding: 10px;
+    font-size: var(--normal);
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+footer a {
+    color: var(--green-color);
+}
